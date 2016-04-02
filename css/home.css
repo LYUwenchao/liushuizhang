@@ -1,0 +1,242 @@
+a{
+    text-decoration: none;
+    color: #555;
+}
+a:hover{
+    color: #f93;
+}
+/*侧边工具栏*/
+    .toolbar{
+        position: fixed;
+        right: 10px;
+        bottom: 5px;
+        z-index: 9999;
+    }
+    .toolbar-common{
+        display: block;width: 40px;height: 40px;
+        background-image: url(../images/tool.png);
+        background-repeat: no-repeat;
+        margin-top: 1px;
+        position:relative;  
+        transition:background-position 1s;
+    }
+    .toolbar-feedback{
+        background-position: 0 0;
+    }
+    .toolbar-feedback:hover{
+        background-position: 0 -47.7px;
+    }
+    .toolbar-weixin{
+        background-position: 0 -286px;
+    }
+    .toolbar-weixin:hover{
+        background-position: 0 -333.8px;
+    }
+    .toolbar-weibo{
+        background-position: 0 -95.4px;
+    }
+    .toolbar-weibo:hover{
+        background-position: 0 -143px;
+    }
+    .toolbar-top{
+        background-position: 0 -190.7px;
+        /*opacity: 0;*/
+    }
+    .toolbar-top:hover{
+        background-position: 0 -238.5px;
+    }
+/*侧边工具栏*/
+/*侧边导航栏*/
+    aside{
+        position: fixed;
+        right: 30px;
+        top: 70px;
+        z-index: 850;
+    }
+    aside ul{
+        padding: 0;
+        list-style: none;
+    }
+    aside ul li {
+        height: 56px;
+        width: 56px;
+        padding: 15px;
+        border-radius: 56px;
+        margin-bottom: 20px;
+        background:rgba(0, 161, 254, 1);
+    }
+    aside ul li a{
+        color: #fff;
+    }
+
+    .fa-search,.fa-file-text-o,.fa-users{
+        font-size: 30px;
+    }
+    .fa-search{
+        margin-left: 14px;
+    }
+    .fa-file-text-o{
+        margin-left: 15px;
+    }
+    .fa-users{
+        margin-left: 12px;
+    }
+    aside ul li p{
+        margin-top:5px;
+        font-size: 14px;
+        text-align: center;
+    }
+/*侧边导航栏*/
+
+body{
+    background: url(../images/bgimg_1.png) no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: Microsoft YaHei;
+    color: #555;
+}
+
+#container{
+    max-width: 1200px;
+    min-width: 480px;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: hidden;
+    position:relative;
+}
+
+.box{padding: 25px 15px 0 15px;float: left;}
+.pic{padding: 15px;
+    background:#fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc
+}
+.pic img{
+    width: 300px;
+    height: auto;
+}
+.title p{
+    font-weight: bold;
+    font-size: 30px;
+    color:#ff6666;
+}
+.title p i{
+    font-size: 18px;
+}
+.fa-folder-open,.fa-pencil{
+    font-size: 40px;
+}
+.fa-pencil{
+    margin-right: 8px;
+}
+.gallery{
+    margin-right: 5%;
+    background: url(../images/bookrack.png) no-repeat 0% 100%;
+    background-size:100%;
+    padding-left:40px;
+    padding-right: 40px;
+    height: auto;
+    float: left;
+    width: 20%;
+}
+.gallery .article{
+    width: 80%;
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-top: 18%;
+    margin-bottom: 9%;
+    border: 5px solid #fff;
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+}
+.post:hover{
+    transform:scale(1.1);
+    transition:1s;
+}
+.post{
+    position: relative;
+}
+.post .new_tag{
+    position: absolute;
+    z-index: 800;
+    left: 0;
+    top:10px;
+    width: 40%;
+}
+.update{
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+#waterfall{
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.waterfall_box{
+    padding: 25px 50px 0 0;
+    float: left;
+}
+.waterfall_pic{
+    width: 250px;
+    padding: 10px;
+    border: 5px solid #fff;
+    background-color: #eee;
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    box-shadow:0 0 3px rgba(0, 0, 0, .2);
+    -moz-box-shadow:0 0 3px rgba(0, 0, 0, .2);
+    -webkit-box-shadow:0 0 3px rgba(0, 0, 0, .2); 
+}
+.waterfall_pic img{
+    width: 250px;
+}
+.waterfall_pic h1{
+    font-size: 1.5em;
+    text-align: center;
+}
+.waterfall_pic h3{
+    font-size: 0.7em;
+    text-align: right;
+    margin-right: 0.7em;
+}
+.waterfall_pic p{
+    line-height:1.5em; 
+    text-indent: 2em;
+}
+#loading{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 40px;
+    height: 60px;
+    position: relative;
+}
+#loading a{
+    text-decoration: none;
+}
+#loading span{
+    color: #fff;
+    border-radius: 10px;
+    background-color:#ff6666;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: jumping 1s infinite;
+    -webkit-animation: jumping 1s infinite;
+    
+}
+@keyframes jumping {
+    from {top: 0;}
+    to {top: 20px;}
+}
+@-webkit-keyframes jumping {
+    from {top: 0;}
+    to {top: 20px;}
+}
+
+
